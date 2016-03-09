@@ -10,7 +10,7 @@
 ###Using
 Connect to your project `sprite.scss`.
 
-HTML:
+HTML (animated sprite icon: 128px height, 50 frames, 1s duration, infinite iteration):
 ```
 <div class="ai" style="background-image: url('path_to_svg_icon')" data-size="128" data-iteration="infinite"></div>
 ```
