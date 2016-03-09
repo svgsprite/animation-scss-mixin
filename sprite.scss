@@ -23,7 +23,7 @@
 // 50 frames
 @include keyframes(play50) {
   0%   {background-position-x: 0px;}
-  100% {background-position-x: -128px * 49;}
+  100% {background-position-x: -128px * 50;}
 }
 
 @mixin animation-name ($val) {
@@ -61,29 +61,14 @@
   animation-iteration-count: $val;
 }
 
-.animated-icon {
+.ai {
   @include animation-mode(both);
-
-  &[data-size="64"] {
-    width: 64px;
-    height: 64px;
-  }
+  @include animation-duration(1s);
+  @include animation-timing(steps(49));
 
   &[data-size="128"] {
     width: 128px;
     height: 128px;
-  }
-
-  &[data-frames="50"] {
-    @include animation-timing(steps(49));
-  }
-
-  &[data-time="1s"] {
-    @include animation-duration(1s);
-  }
-
-  &[data-time="2s"] {
-    @include animation-duration(2s);
   }
 
   &[data-iteration="infinite"] {

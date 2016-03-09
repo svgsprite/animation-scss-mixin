@@ -12,12 +12,8 @@ Connect to your project `sprite.scss`.
 
 HTML:
 ```
-<div class="animated-icon" data-name="icon_name" data-frames="50" data-time="1s" data-size="128"></div>
+<div class="ai" style="background-image: url('path_to_svg_icon')" data-size="128" data-iteration="infinite"></div>
 ```
-Second SCSS:
-```
-[data-name="icon_name.svg"] { background-image: url('/img/icon_name.svg'); }
-```
-Add a class `play` for `div.animated-icon` to play!
+Add a class `play` for `div.ai` to play!
 ###Demo
 [svgsprite.com](http://svgsprite.com/) –  Animated Vector Graphics for Web
