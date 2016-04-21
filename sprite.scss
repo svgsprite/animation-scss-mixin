@@ -22,8 +22,8 @@
 
 // 50 frames
 @include keyframes(play50) {
-  0%   {background-position-x: 0px;}
-  100% {background-position-x: -128px * 50;}
+  0%   {background-position: 0px 0px;}
+  100% {background-position: (-128px * 50) 0px;}
 }
 
 @mixin animation-name ($val) {
